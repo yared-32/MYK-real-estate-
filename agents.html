@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Agents | MYK Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .page-header {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+    
+    .agents-section {
+      padding: 4rem 0;
+    }
+    
+    .team-intro {
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+    
+    .join-team {
+      margin-top: 4rem;
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      padding: 2rem;
+    }
+    
+    .benefits-list {
+      margin-top: 1.5rem;
+    }
+    
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    
+    .benefit-item i {
+      color: var(--primary-color);
+      margin-right: 0.75rem;
+      margin-top: 0.25rem;
+    }
+    
+    @media (max-width: 768px) {
+      .agents-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">MYK</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html" class="active">Agents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Professional Agents</h1>
+    </div>
+  </section>
+
+  <!-- Agents Section -->
+  <section class="agents-section">
+    <div class="container">
+      <div class="team-intro">
+        <p>At MYK, our team of experienced real estate professionals is dedicated to providing exceptional service and guidance through every step of your property journey. Whether you're buying, selling, or investing, our agents have the expertise and local knowledge to help you achieve your real estate goals.</p>
+      </div>
+      
+      <div class="agents-grid" id="all-agents-grid"></div>
+      
+      <!-- Join Our Team -->
+      <div class="join-team">
+        <h2>Join Our Team</h2>
+        <p>Are you a passionate real estate professional looking to take your career to the next level? At MYK, we're always looking for talented individuals to join our team of experts.</p>
+        
+        <h3>Why Work With Us</h3>
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Access to premium listings and exclusive properties</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Comprehensive training and professional development opportunities</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Cutting-edge marketing tools and technology platform</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Supportive team environment with collaborative culture</span>
+          </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 1.5rem;">
+          <a href="contact.html" class="btn primary-btn">Contact Us to Apply</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>MYK</h3>
+          <p>Helping you find the perfect place to call home since yesterday 😉. Your trusted partner in real estate.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="agents.html">Our Agents</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Property Types</h3>
+          <ul>
+            <li><a href="properties.html?type=house">Residential Homes</a></li>
+            <li><a href="properties.html?type=apartment">Apartments</a></li>
+            <li><a href="properties.html?type=condo">Condos</a></li>
+            <li><a href="properties.html">Luxury Homes</a></li>
+            <li><a href="properties.html">Commercial Properties</a></li>
+            <li><a href="properties.html">Land</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Subscribe</h3>
+          <p>Subscribe to our newsletter to receive the latest property updates and market insights.</p>
+          <form id="newsletter-form">
+            <div class="newsletter-input">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> HomeHaven Real Estate. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Agent Modal -->
+  <div id="agent-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="agent-details"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Display all agents
+      const agentsGrid = document.getElementById('all-agents-grid');
+      if (agentsGrid) {
+        displayAgents(agents, agentsGrid);
+      }
+      
+      // Add click event to show agent details
+      const agentCards = document.querySelectorAll('.agent-card');
+      agentCards.forEach(card => {
+        card.addEventListener('click', function() {
+          const agentId = parseInt(this.dataset.id);
+          showAgentDetails(agentId);
+        });
+      });
+    });
+    
+    function showAgentDetails(agentId) {
+      const agent = agents.find(a => a.id === agentId);
+      if (!agent) return;
+      
+      const modal = document.getElementById('agent-modal');
+      const agentDetails = document.getElementById('agent-details');
+      
+      // Get properties from this agent (demo implementation)
+      const agentProperties = properties.filter((_, index) => index % agents.length === (agentId - 1) % agents.length);
+      
+      let propertyListHtml = '';
+      if (agentProperties.length > 0) {
+        propertyListHtml = `
+          <h3>Current Listings</h3>
+          <div class="property-grid">
+            ${agentProperties.map(property => `
+              <div class="property-card" data-id="${property.id}">
+                <div class="property-image">
+                  <img src="${property.imageUrl}" alt="${property.title}">
+                </div>
+                <div class="property-content">
+                  <span class="property-price">${formatPrice(property.price)}</span>
+                  <h3 class="property-title">${property.title}</h3>
+                  <p class="property-address">${property.address}</p>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+      
+      agentDetails.innerHTML = `
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem;">
+          <div>
+            <div style="border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;">
+              <img src="${agent.imageUrl}" alt="${agent.name}" style="width: 100%; height: auto;">
+            </div>
+            <div style="background-color: var(--light-gray); border-radius: 8px; padding: 1.5rem;">
+              <h3>${agent.name}</h3>
+              <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 1rem;">${agent.title}</p>
+              
+              <div style="margin-bottom: 1rem;">
+                <p><i class="fas fa-phone-alt" style="width: 1.5rem; color: var(--primary-color);"></i> ${agent.phone}</p>
+                <p><i class="fas fa-envelope" style="width: 1.5rem; color: var(--primary-color);"></i> ${agent.email}</p>
+              </div>
+              
+              <div class="social-icons">
+                ${agent.facebook ? `<a href="https://facebook.com/${agent.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>` : ''}
+                ${agent.twitter ? `<a href="https://twitter.com/${agent.twitter}" target="_blank"><i class="fab fa-twitter"></i></a>` : ''}
+                ${agent.instagram ? `<a href="https://instagram.com/${agent.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>` : ''}
+                ${agent.linkedin ? `<a href="https://linkedin.com/in/${agent.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>` : ''}
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2>${agent.name}</h2>
+            <p style="margin-bottom: 1.5rem;">${agent.description} With extensive market knowledge and a commitment to client satisfaction, ${agent.name.split(' ')[0]} has built a reputation for professionalism and results-driven service.</p>
+            
+            <h3>Areas of Expertise</h3>
+            <ul style="margin-bottom: 2rem; list-style-type: none; padding-left: 0;">
+              <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Residential properties</li>
+              <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> First-time homebuyers</li>
+              <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Investment properties</li>
+              <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Luxury homes</li>
+            </ul>
+            
+            ${propertyListHtml}
+          </div>
+        </div>
+      `;
+      
+      modal.style.display = 'block';
+      
+      // Close modal functionality
+      const closeBtn = document.querySelector('.close-modal');
+      closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+      
+      // Close modal when clicking outside
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+      
+      // Add click events to properties in the modal
+      const propertyCards = agentDetails.querySelectorAll('.property-card');
+      propertyCards.forEach(card => {
+        card.addEventListener('click', function() {
+          const propertyId = parseInt(this.dataset.id);
+          modal.style.display = 'none';  // Close agent modal
+          showPropertyDetails(propertyId);  // Open property modal
+        });
+      });
+    }
+    
+    // Enhance the displayAgents function to include agent ID
+    function displayAgents(agents, container) {
+      container.innerHTML = '';
+      
+      agents.forEach(agent => {
+        const agentCard = document.createElement('div');
+        agentCard.className = 'agent-card';
+        agentCard.dataset.id = agent.id;  // Add agent ID as data attribute
+        
+        let socialLinks = '';
+        if (agent.facebook) {
+          socialLinks += `<a href="https://facebook.com/${agent.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`;
+        }
+        if (agent.twitter) {
+          socialLinks += `<a href="https://twitter.com/${agent.twitter}" target="_blank"><i class="fab fa-twitter"></i></a>`;
+        }
+        if (agent.instagram) {
+          socialLinks += `<a href="https://instagram.com/${agent.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>`;
+        }
+        if (agent.linkedin) {
+          socialLinks += `<a href="https://linkedin.com/in/${agent.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>`;
+        }
+        
+        agentCard.innerHTML = `
+          <div class="agent-image">
+            <img src="${agent.imageUrl}" alt="${agent.name}">
+          </div>
+          <div class="agent-content">
+            <h3 class="agent-name">${agent.name}</h3>
+            <p class="agent-title">${agent.title}</p>
+            <p class="agent-description">${agent.description}</p>
+            <div class="agent-social">
+              ${socialLinks}
+            </div>
+          </div>
+        `;
+        
+        container.appendChild(agentCard);
+      });
+    }
+  </script>
+</body>
+</html>

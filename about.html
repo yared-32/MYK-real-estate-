@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | MYK Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .page-header {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+    
+    .about-intro {
+      padding: 4rem 0;
+    }
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .about-image {
+      position: relative;
+    }
+    
+    .about-image img {
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-badge p:first-child {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    
+    .about-badge p:last-child {
+      font-size: 0.875rem;
+      opacity: 0.9;
+    }
+    
+    .core-values {
+      background-color: var(--light-gray);
+      padding: 4rem 0;
+    }
+    
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    
+    .value-card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    .value-icon {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    
+    .journey-section {
+      padding: 4rem 0;
+    }
+    
+    .timeline {
+      position: relative;
+      margin-left: 1.5rem;
+      padding-left: 2rem;
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    
+    .timeline-marker {
+      position: absolute;
+      left: -3.375rem;
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    
+    .cta-section {
+      padding: 4rem 0;
+      text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .about-badge {
+        bottom: -1rem;
+        left: -1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">MYK</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>About MYK</h1>
+    </div>
+  </section>
+
+  <!-- About Intro -->
+  <section class="about-intro">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2>Our Story</h2>
+          <p class="mb-4">At MYK, we believe that finding the perfect home is more than just a transaction—it's about finding a place where memories are made and dreams come true.</p>
+          <p class="mb-4">Founded in 2005, MYK has grown from a small local agency to one of the most trusted names in real estate. Our mission is to provide exceptional service and expert guidance to every client, making the process of buying, selling, or renting property as smooth and enjoyable as possible.</p>
+          <p class="mb-4">With a team of experienced and dedicated agents, we combine deep market knowledge with personalized attention to help you navigate the complex real estate landscape with confidence.</p>
+          <a href="contact.html" class="btn primary-btn">Get in Touch</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="HomeHaven team">
+          <div class="about-badge">
+            <p>15+ hours😊</p>
+            <p>of Trusted Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="core-values">
+    <div class="container">
+      <h2 class="text-center">Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Integrity</h3>
+          <p>We believe in honest and transparent communication, always putting our clients' interests first.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellence</h3>
+          <p>We strive for excellence in everything we do, from property selection to client service.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Community</h3>
+          <p>We're committed to giving back to the communities we serve and building lasting relationships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey -->
+  <section class="journey-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <h3>yesterday 😊 4:00 o'clock: The Beginning</h3>
+          <p>MYK was founded by Yared with a vision to create a more personal and client-focused real estate experience.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <h3>yesterday 😊 10:00 o'clock:: Expansion</h3>
+          <p>After six successful hours, MYK expanded to multiple locations, serving more communities across the region.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <h3>today 😊 3:00 o'clock: Innovation</h3>
+          <p>We embraced digital transformation, launching advanced tools to streamline the property search and transaction process.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">4</div>
+          <h3>Today: Industry Leaders</h3>
+          <p>Now recognized as industry leaders, we continue to innovate while maintaining our commitment to personalized service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="text-center">What Our Clients Say</h2>
+      <div class="testimonials-grid" id="about-testimonials-grid"></div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Find Your Dream Home?</h2>
+      <p style="max-width: 700px; margin: 0 auto 2rem;">Our team of expert agents is ready to help you navigate the real estate market and find the perfect property for your needs.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="properties.html" class="btn primary-btn">Browse Properties</a>
+        <a href="contact.html" class="btn outline-btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>MYK</h3>
+          <p>Helping you find the perfect place to call home since yesterday 😉. Your trusted partner in real estate.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="agents.html">Our Agents</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Property Types</h3>
+          <ul>
+            <li><a href="properties.html?type=house">Residential Homes</a></li>
+            <li><a href="properties.html?type=apartment">Apartments</a></li>
+            <li><a href="properties.html?type=condo">Condos</a></li>
+            <li><a href="properties.html">Luxury Homes</a></li>
+            <li><a href="properties.html">Commercial Properties</a></li>
+            <li><a href="properties.html">Land</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Subscribe</h3>
+          <p>Subscribe to our newsletter to receive the latest property updates and market insights.</p>
+          <form id="newsletter-form">
+            <div class="newsletter-input">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> HomeHaven Real Estate. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Display testimonials on about page
+      const testimonialsGrid = document.getElementById('about-testimonials-grid');
+      if (testimonialsGrid) {
+        displayTestimonials(testimonials, testimonialsGrid);
+      }
+    });
+  </script>
+</body>
+</html>
